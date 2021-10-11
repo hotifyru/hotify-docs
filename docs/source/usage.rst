@@ -35,7 +35,7 @@
    {
       "app_id": 1,
       "title": "First notification",
-      "text": "Hello world"
+      "text": "Hello world!"
    }
 
 Пример успешного ответа:
@@ -54,5 +54,5 @@
 
    {
       "success": false,
-      "erorr": "Ошибка"
+      "error": "Ошибка"
    }
