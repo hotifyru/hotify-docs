@@ -1,34 +1,58 @@
-Usage
+Использование
 =====
+Основной адрес и авторизация
+----------------
+**Основной URL: https://hotify.ru/api/v1.0/**
 
-.. _installation:
-
-Installation
-------------
-
-To use Lumache, first install it using pip:
+Чтобы мы поняли, кто отправляет уведомление, с каждым запросом в заголовке необходимо отправлять API токен
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
-
-Creating recipes
+   Authorization: YOUR_API_TOKEN_HERE
+   
+Создание уведомления
 ----------------
+Чтобы создать уведомление, необходимо сделать **POST** запрос на адрес
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+**https://hotify.ru/api/v1.0/notification**
 
-.. autofunction:: lumache.get_random_ingredients
+со следующими параметрами
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
++------------+------------+---------------+
+| Параметр   | Тип        | Обязательный  |
++============+============+===============+
+| app_id     | Int        | Да            |
++------------+------------+---------------+
+| title      | String     | Нет           |
++------------+------------+---------------+
+| text       | String     |  Да           |
++------------+------------+---------------+
 
-.. autoexception:: lumache.InvalidKindError
+Например:
 
-For example:
+.. code-block:: json
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+   {
+      "app_id": 1,
+      "title": "First notification",
+      "text": "Hello world"
+   }
 
+Пример успешного ответа:
+
+
+.. code-block:: json
+
+   {
+      "success": true
+   }
+
+Пример неудачного ответа:
+
+
+.. code-block:: json
+
+   {
+      "success": false,
+      "erorr": "Ошибка"
+   }
