@@ -1,17 +1,13 @@
 Добро пожаловать в документацию API Hotify!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Hotify.ru** - сервис сбора уведомлений 
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Здесь вы узнаете, как создавать уведомления, используя наш API.
 
 .. note::
 
-   This project is under active development.
+   Для создания уведомлений вам потребует **API Токен**, который вы можете найти в личном кабинете на Hotify.ru
 
 Contents
 --------
