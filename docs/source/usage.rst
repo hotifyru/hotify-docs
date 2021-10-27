@@ -56,3 +56,9 @@
       "success": false,
       "error": "Ошибка"
    }
+   
+Пакет для PHP
+----------------
+Если вы используете PHP, вы можете воспользоваться готовым пакетом
+
+https://packagist.org/packages/hotifyru/hotify
