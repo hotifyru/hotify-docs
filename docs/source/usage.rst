@@ -14,7 +14,7 @@
 ----------------
 Чтобы создать уведомление, необходимо отправить **POST** запрос на адрес
 
-**https://hotify.ru/api/v1.0/notification**
+**https://hotify.ru/api/v1.0/notifications**
 
 со следующими параметрами
 
