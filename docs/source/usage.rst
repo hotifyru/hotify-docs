@@ -1,38 +1,38 @@
-Использование
+Usage
 =====
-Основной адрес и авторизация
+Authorization
 ----------------
-Основной URL: **https://hotify.ru/api/v1.0/**
+Main URL: **https://hotify.pw/api/v1/**
 
-С каждым запросом в заголовке необходимо отправлять API токен
+With each request in the header you need to send an API token
 
 .. code-block:: console
 
    Authorization: YOUR_API_TOKEN_HERE
    
-Создание уведомления
+Creating a notification
 ----------------
-Чтобы создать уведомление, необходимо отправить **POST** запрос на адрес
+To create a notification, you must send a **POST** request to
 
-**https://hotify.ru/api/v1.0/notifications**
+**https://hotify.pw/api/v1/notifications**
 
-со следующими параметрами
+with the following parameters
 
-+------------+------------+-----------------------+
-| Параметр   | Тип        | Обязательный          |
-+============+============+=======================+
-| app_id     | Int        | Да (если нет tag)     |
-+------------+------------+-----------------------+
-| tag        | String     | Да (если нет app_id)  |
-+------------+------------+-----------------------+
-| title      | String     | Нет                   |
-+------------+------------+-----------------------+
-| text       | String     |  Да                   |
-+------------+------------+-----------------------+
++-------------+------------+-----------------------+
+| Parameter   | Type       | Required              |
++=============+============+=======================+
+| app_id      | Int        | Yes (If no tag)       |
++-------------+------------+-----------------------+
+| tag         | String     | Yes (If no app_id)    |
++-------------+------------+-----------------------+
+| title       | String     | No                    |
++-------------+------------+-----------------------+
+| text        | String     | Yes                   |
++-------------+------------+-----------------------+
 
-Вы можете указать **app_id** либо **tag** приложения. Тег вы можете назначить сами в личном кабинете.
+You can pass **app_id** or **tag**. You can assign the tag yourself in your dashboard.
 
-Например:
+For example:
 
 .. code-block:: json
 
@@ -42,7 +42,7 @@
       "text": "Hello world!"
    }
 
-Пример успешного ответа:
+Successful response example:
 
 
 .. code-block:: json
@@ -51,7 +51,7 @@
       "success": true
    }
 
-Пример неудачного ответа:
+Error response example:
 
 
 .. code-block:: json
@@ -61,8 +61,8 @@
       "error": "Ошибка"
    }
    
-Пакет для PHP
+PHP package
 ----------------
-Если вы используете PHP, вы можете воспользоваться готовым пакетом
+If you are using PHP, you can use our package
 
 https://packagist.org/packages/hotifyru/hotify
