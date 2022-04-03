@@ -1,15 +1,15 @@
-Добро пожаловать в документацию API Hotify!
+Welcome to Hotify API Documentation!
 ===================================
 
-**Hotify.ru** - сервис сбора уведомлений 
+**Hotify.pw** - notification service.
 
-Здесь вы узнаете, как создавать уведомления, используя наш API.
+Here you will learn how to create notifications using our API.
 
 .. note::
 
-   Для создания уведомлений вам потребуется **API Токен**, который вы можете найти в личном кабинете на Hotify.ru
+   To create notifications, you need to use **API Token**, which you can find in your personal account on Hotify.pw
 
-Содержание
+Contents
 --------
 
 .. toctree::
